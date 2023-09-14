@@ -15,3 +15,8 @@
 .descricao-card{
     min-height: 100px;
 }
+
+.titulo-card{
+    padding-top: 10px;
+    min-height: 70px;
+}

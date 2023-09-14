@@ -38,7 +38,7 @@ function User() {
                   }
                 }
                 return (
-                  <div className="cards">
+                  <div className="cards" key={carro}>
                     <Card sx={{ maxWidth: 345 }}>
                       <CardActionArea>
                         <CardMedia
@@ -48,7 +48,12 @@ function User() {
                           alt="imagem do carro"
                         />
                         <CardContent>
-                          <Typography gutterBottom variant="h5" component="div">
+                          <Typography
+                            gutterBottom
+                            variant="h5"
+                            component="div"
+                            className="titulo-card"
+                          >
                             {`${carro.marca} ${carro.modelo}`}
                           </Typography>
                           <Typography
